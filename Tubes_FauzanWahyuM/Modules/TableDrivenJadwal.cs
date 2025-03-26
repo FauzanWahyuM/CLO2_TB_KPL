@@ -40,5 +40,22 @@ namespace Tubes_FauzanWahyuM.Modules
         {
             return dataKaryawan.ContainsKey(karyawan) && dataKaryawan[karyawan].Contains(tugas);
         }
+
+        public static void SelesaikanTugas(string karyawan, string tugas, Dictionary<string, List<string>> dataKaryawan)
+        {
+            if (dataKaryawan.ContainsKey(karyawan) && dataKaryawan[karyawan].Contains(tugas))
+            {
+                dataKaryawan[karyawan].Remove(tugas);
+                Console.WriteLine($"Tugas \"{tugas}\" telah diselesaikan dan dihapus dari jadwal.");
+            }
+            else
+            {
+                Console.WriteLine("Tugas tidak ditemukan dalam daftar tugas Anda.");
+            }
+        }
+        public static List<string> GetTugasKaryawan(string karyawan, Dictionary<string, List<string>> dataKaryawan)
+        {
+            return dataKaryawan.ContainsKey(karyawan) ? new List<string>(dataKaryawan[karyawan]) : new List<string>();
+        }
     }
 }
