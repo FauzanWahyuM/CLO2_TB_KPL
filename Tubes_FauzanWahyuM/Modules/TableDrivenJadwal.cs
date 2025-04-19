@@ -6,56 +6,80 @@ using System.Threading.Tasks;
 
 namespace Tubes_FauzanWahyuM.Modules
 {
-    public class TableDrivenJadwal
+    public static class TableDrivenJadwal
     {
-        private static List<string> jadwalTugas = new List<string>();
-
-        public static void SimpanJadwal(string karyawan, string tugas, int durasi, Dictionary<string, List<string>> dataKaryawan)
+        public static void SimpanJadwal(string karyawan, string tugas, int durasi, Dictionary<string, List<string>> data)
         {
-            if (!dataKaryawan.ContainsKey(karyawan))
+            if (!data.ContainsKey(karyawan))
             {
-                dataKaryawan[karyawan] = new List<string>();
+                data[karyawan] = new List<string>();
             }
 
-            dataKaryawan[karyawan].Add($"{tugas} - Durasi: {durasi} jam");
+            string formatTugas = $"Tugas: {tugas}, Durasi: {durasi} jam";
+            data[karyawan].Add(formatTugas);
         }
 
-        public static void TampilkanJadwal(string karyawan, Dictionary<string, List<string>> dataKaryawan)
+        public static void TampilkanJadwal(string karyawan, Dictionary<string, List<string>> data)
         {
-            if (!dataKaryawan.ContainsKey(karyawan) || dataKaryawan[karyawan].Count == 0)
+            if (data.ContainsKey(karyawan) && data[karyawan].Count > 0)
             {
-                Console.WriteLine("Belum ada tugas yang disimpan untuk karyawan ini.");
-            }
-            else
-            {
-                Console.WriteLine($"Jadwal tugas untuk {karyawan}:");
-                foreach (var tugas in dataKaryawan[karyawan])
+                foreach (var tugas in data[karyawan])
                 {
-                    Console.WriteLine($"{tugas}");
+                    Console.WriteLine("- " + tugas);
                 }
             }
-        }
-
-        public static bool CekTugasTersimpan(string karyawan, string tugas, Dictionary<string, List<string>> dataKaryawan)
-        {
-            return dataKaryawan.ContainsKey(karyawan) && dataKaryawan[karyawan].Contains(tugas);
-        }
-
-        public static void SelesaikanTugas(string karyawan, string tugas, Dictionary<string, List<string>> dataKaryawan)
-        {
-            if (dataKaryawan.ContainsKey(karyawan) && dataKaryawan[karyawan].Contains(tugas))
-            {
-                dataKaryawan[karyawan].Remove(tugas);
-                Console.WriteLine($"Tugas \"{tugas}\" telah diselesaikan dan dihapus dari jadwal.");
-            }
             else
             {
-                Console.WriteLine("Tugas tidak ditemukan dalam daftar tugas Anda.");
+                Console.WriteLine("Belum ada tugas yang disimpan.");
             }
         }
-        public static List<string> GetTugasKaryawan(string karyawan, Dictionary<string, List<string>> dataKaryawan)
+
+        public static bool CekTugasTersimpan(string karyawan, string tugas, Dictionary<string, List<string>> data)
         {
-            return dataKaryawan.ContainsKey(karyawan) ? new List<string>(dataKaryawan[karyawan]) : new List<string>();
+            if (data.ContainsKey(karyawan))
+            {
+                foreach (var item in data[karyawan])
+                {
+                    if (item.Contains(tugas))
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+        public static List<string> GetTugasKaryawan(string karyawan, Dictionary<string, List<string>> data)
+        {
+            if (data.ContainsKey(karyawan))
+            {
+                // Hanya ambil tugas yang belum selesai
+                List<string> belumSelesai = new List<string>();
+                foreach (var tugas in data[karyawan])
+                {
+                    if (!tugas.Contains("(Selesai)"))
+                    {
+                        belumSelesai.Add(tugas);
+                    }
+                }
+                return belumSelesai;
+            }
+            return new List<string>();
+        }
+
+        public static void SelesaikanTugas(string karyawan, string tugas, Dictionary<string, List<string>> data)
+        {
+            if (data.ContainsKey(karyawan))
+            {
+                for (int i = 0; i < data[karyawan].Count; i++)
+                {
+                    if (data[karyawan][i].Equals(tugas) && !data[karyawan][i].Contains("(Selesai)"))
+                    {
+                        data[karyawan][i] += " (Selesai)";
+                        break;
+                    }
+                }
+            }
         }
     }
 }
