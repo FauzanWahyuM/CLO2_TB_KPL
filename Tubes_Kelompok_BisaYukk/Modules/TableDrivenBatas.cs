@@ -11,9 +11,9 @@ namespace Tubes_Kelompok_BisaYukk.Modules
     {
         private static Dictionary<StatusKaryawan, Tuple<int, int>> batasWaktuTugas = new Dictionary<StatusKaryawan, Tuple<int, int>>
         {
-            { StatusKaryawan.Junior, Tuple.Create(2, 6) },
-            { StatusKaryawan.Middle, Tuple.Create(4, 8) },
-            { StatusKaryawan.Senior, Tuple.Create(6, 10) }
+            { StatusKaryawan.Intern, Tuple.Create(2, 6) },
+            { StatusKaryawan.JuniorStaff, Tuple.Create(4, 8) },
+            { StatusKaryawan.SeniorStaff, Tuple.Create(6, 10) }
         };
 
         public static Tuple<int, int> GetBatasWaktu(StatusKaryawan status)

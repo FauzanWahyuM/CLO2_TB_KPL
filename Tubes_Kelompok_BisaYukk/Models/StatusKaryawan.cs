@@ -8,8 +8,8 @@ namespace Tubes_Kelompok_BisaYukk.Models
 {
     public enum StatusKaryawan
     {
-        Junior,
-        Middle,
-        Senior
+        Intern,
+        JuniorStaff,
+        SeniorStaff,
     }
 }

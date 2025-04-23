@@ -11,9 +11,9 @@ namespace Tubes_Kelompok_BisaYukk.Modules
     {
         private static Dictionary<StatusKaryawan, List<string>> tugasPerStatus = new Dictionary<StatusKaryawan, List<string>>
         {
-            { StatusKaryawan.Junior, new List<string>() },
-            { StatusKaryawan.Middle, new List<string>() },
-            { StatusKaryawan.Senior, new List<string>() }
+            { StatusKaryawan.Intern, new List<string>() },
+            { StatusKaryawan.JuniorStaff, new List<string>() },
+            { StatusKaryawan.SeniorStaff, new List<string>() }
         };
 
         public static List<string> GetTugas(StatusKaryawan status)
@@ -40,6 +40,18 @@ namespace Tubes_Kelompok_BisaYukk.Modules
             {
                 tugasPerStatus[status].Remove(tugas);
             }
+        }
+
+        public static StatusKaryawan? GetStatusDariTugas(string namaTugas)
+        {
+            foreach (StatusKaryawan status in Enum.GetValues(typeof(StatusKaryawan)))
+            {
+                if (tugasPerStatus.ContainsKey(status) && tugasPerStatus[status].Contains(namaTugas))
+                {
+                    return status;
+                }
+            }
+            return null;
         }
     }
 }

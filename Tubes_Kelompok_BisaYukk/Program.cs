@@ -33,7 +33,7 @@ namespace Tubes_FauzanWahyuM
                 Console.WriteLine("1. Login sebagai Admin");
                 Console.WriteLine("2. Login sebagai Karyawan");
                 Console.WriteLine("3. Keluar");
-                Console.Write("Pilih menu: ");
+                Console.Write("\nPilih menu: ");
 
                 string pilihanLogin = Console.ReadLine()?.Trim();
 
@@ -97,7 +97,7 @@ namespace Tubes_FauzanWahyuM
                 Console.WriteLine("4. Statistik & Laporan Karyawan");
                 Console.WriteLine("5. Logout");
                 Console.WriteLine("6. Keluar Program");
-                Console.Write("Pilih menu: ");
+                Console.Write("\nPilih menu: ");
 
                 string pilihan = Console.ReadLine()?.Trim() ?? "";
 
@@ -150,7 +150,7 @@ namespace Tubes_FauzanWahyuM
                 Console.WriteLine("2. Tambah tugas");
                 Console.WriteLine("3. Hapus tugas");
                 Console.WriteLine("4. Kembali ke menu login");
-                Console.Write("Pilih menu: ");
+                Console.Write("\nPilih menu: ");
 
                 string pilihan = Console.ReadLine()?.Trim();
 
@@ -207,7 +207,7 @@ namespace Tubes_FauzanWahyuM
 
         static bool IsValidStatus(string input, out StatusKaryawan status)
         {
-            status = StatusKaryawan.Junior;
+            status = StatusKaryawan.JuniorStaff;
             return !string.IsNullOrWhiteSpace(input) && Enum.TryParse(input.Trim(), true, out status);
         }
 
@@ -221,7 +221,9 @@ namespace Tubes_FauzanWahyuM
             Console.WriteLine("\nDaftar semua tugas:");
             foreach (var item in AutomataPemesanan.GetSemuaTugas())
             {
-                Console.WriteLine($"- {item.Key} (Status: {(item.Value ? "Tersedia" : "Sudah Diambil")})");
+                var status = AutomataStatus.GetStatusDariTugas(item.Key);
+                string statusStr = status.HasValue ? status.Value.ToString() : "Tidak Diketahui";
+                Console.WriteLine($"- {item.Key} (Status: {(item.Value ? "Tersedia" : "Sudah Diambil")} | {statusStr})");
             }
         }
 
@@ -235,25 +237,25 @@ namespace Tubes_FauzanWahyuM
                 return;
             }
 
-            Console.WriteLine("Pilih status karyawan untuk tugas ini:");
-            Console.WriteLine("1. Junior");
-            Console.WriteLine("2. Middle");
-            Console.WriteLine("3. Senior");
+            Console.WriteLine("\nPilih status karyawan untuk tugas ini:");
+            Console.WriteLine("1. Intern");
+            Console.WriteLine("2. Junior Staff");
+            Console.WriteLine("3. Senior Staff");
             Console.Write("Pilihan: ");
             string statusInput = Console.ReadLine()?.Trim();
 
             StatusKaryawan status;
             switch (statusInput)
             {
-                case "1": status = StatusKaryawan.Junior; break;
-                case "2": status = StatusKaryawan.Middle; break;
-                case "3": status = StatusKaryawan.Senior; break;
+                case "1": status = StatusKaryawan.Intern; break;
+                case "2": status = StatusKaryawan.JuniorStaff; break;
+                case "3": status = StatusKaryawan.SeniorStaff; break;
                 default:
                     Console.WriteLine("Status tidak valid. Tugas tidak ditambahkan.");
                     return;
             }
 
-            Console.WriteLine("Pilih prioritas tugas:");
+            Console.WriteLine("\nPilih prioritas tugas:");
             Console.WriteLine("1. Rendah");
             Console.WriteLine("2. Sedang");
             Console.WriteLine("3. Tinggi");
@@ -279,7 +281,7 @@ namespace Tubes_FauzanWahyuM
             }
             else
             {
-                Console.WriteLine("Tugas sudah ada atau tidak valid.");
+                Console.WriteLine("\nTugas sudah ada atau tidak valid.");
             }
         }
 
@@ -327,7 +329,7 @@ namespace Tubes_FauzanWahyuM
                 Console.ReadKey(); return;
             }
 
-            Console.WriteLine("Tugas yang tersedia:");
+            Console.WriteLine("\nTugas yang tersedia:");
             for (int i = 0; i < tugas.Count; i++)
             {
                 Console.WriteLine($"{i + 1}. {tugas[i]} (Prioritas: {PrioritasTugas.GetPrioritas(tugas[i])})");
