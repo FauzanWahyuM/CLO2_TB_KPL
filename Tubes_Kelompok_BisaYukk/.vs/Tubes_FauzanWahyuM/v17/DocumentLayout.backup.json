@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|c:\\users\\idham\\downloads\\clo2_tb_kpl-fauzanwahyum\\tubes_fauzanwahyum\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|solutionrelative:tubes_fauzanwahyum\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Tubes_Kelompok_BisaYukk||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\tubes_fauzanwahyum\\modules\\tabledrivenbatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|solutionrelative:tubes_fauzanwahyum\\modules\\tabledrivenbatas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\tubes_fauzanwahyum\\modules\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|solutionrelative:tubes_fauzanwahyum\\modules\\filehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\tubes_fauzanwahyum\\models\\statuskaryawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|solutionrelative:tubes_fauzanwahyum\\models\\statuskaryawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\tubes_fauzanwahyum\\modules\\automatapemesanan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|solutionrelative:tubes_fauzanwahyum\\modules\\automatapemesanan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\tubes_fauzanwahyum\\modules\\prioritastugas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|solutionrelative:tubes_fauzanwahyum\\modules\\prioritastugas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\ITTP\\Semester 6\\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\\VS Praktikum\\Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.Test\\AutomataPemesananTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2372FB55-1F6A-4382-95CF-49D13038A98B}|Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.csproj|c:\\users\\idham\\downloads\\clo2_tb_kpl-fauzanwahyum\\tubes_fauzanwahyum\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tubes_Kelompok_BisaYukk",
+              "DocumentMoniker": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Tubes_Kelompok_BisaYukk.csproj",
+              "RelativeDocumentMoniker": "Tubes_FauzanWahyuM\\Tubes_Kelompok_BisaYukk.csproj",
+              "ToolTip": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Tubes_Kelompok_BisaYukk.csproj",
+              "RelativeToolTip": "Tubes_FauzanWahyuM\\Tubes_Kelompok_BisaYukk.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-23T06:22:06.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Program.cs",
+              "RelativeDocumentMoniker": "Tubes_FauzanWahyuM\\Program.cs",
+              "ToolTip": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Program.cs",
+              "RelativeToolTip": "Tubes_FauzanWahyuM\\Program.cs",
+              "ViewState": "AgIAALkAAAAAAAAAAAAgwMAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T03:07:42.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TableDrivenBatas.cs",
+              "DocumentMoniker": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Modules\\TableDrivenBatas.cs",
+              "RelativeDocumentMoniker": "Tubes_FauzanWahyuM\\Modules\\TableDrivenBatas.cs",
+              "ToolTip": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Modules\\TableDrivenBatas.cs",
+              "RelativeToolTip": "Tubes_FauzanWahyuM\\Modules\\TableDrivenBatas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T03:38:54.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Modules\\FileHandler.cs",
+              "RelativeDocumentMoniker": "Tubes_FauzanWahyuM\\Modules\\FileHandler.cs",
+              "ToolTip": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Modules\\FileHandler.cs",
+              "RelativeToolTip": "Tubes_FauzanWahyuM\\Modules\\FileHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T04:16:17.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StatusKaryawan.cs",
+              "DocumentMoniker": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Models\\StatusKaryawan.cs",
+              "RelativeDocumentMoniker": "Tubes_FauzanWahyuM\\Models\\StatusKaryawan.cs",
+              "ToolTip": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Models\\StatusKaryawan.cs",
+              "RelativeToolTip": "Tubes_FauzanWahyuM\\Models\\StatusKaryawan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T03:36:26.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AutomataPemesanan.cs",
+              "DocumentMoniker": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Modules\\AutomataPemesanan.cs",
+              "RelativeDocumentMoniker": "Tubes_FauzanWahyuM\\Modules\\AutomataPemesanan.cs",
+              "ToolTip": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Modules\\AutomataPemesanan.cs",
+              "RelativeToolTip": "Tubes_FauzanWahyuM\\Modules\\AutomataPemesanan.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T03:38:17.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PrioritasTugas.cs",
+              "DocumentMoniker": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Modules\\PrioritasTugas.cs",
+              "RelativeDocumentMoniker": "Tubes_FauzanWahyuM\\Modules\\PrioritasTugas.cs",
+              "ToolTip": "C:\\Users\\Idham\\Downloads\\CLO2_TB_KPL-FauzanWahyuM\\Tubes_FauzanWahyuM\\Modules\\PrioritasTugas.cs",
+              "RelativeToolTip": "Tubes_FauzanWahyuM\\Modules\\PrioritasTugas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T04:22:24.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AutomataPemesananTests.cs",
+              "DocumentMoniker": "D:\\ITTP\\Semester 6\\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\\VS Praktikum\\Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.Test\\AutomataPemesananTests.cs",
+              "ToolTip": "D:\\ITTP\\Semester 6\\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\\VS Praktikum\\Tubes_FauzanWahyuM\\Tubes_FauzanWahyuM.Test\\AutomataPemesananTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T06:16:39.435Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
