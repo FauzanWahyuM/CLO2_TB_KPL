@@ -26,14 +26,47 @@ namespace Tubes_FauzanWahyuM
 
             bool exitProgram = false;
 
-            while (!exitProgram)
+             while (!exitProgram)
             {
                 Console.Clear();
-                Console.WriteLine("==== Sistem Penjadwalan Tugas Karyawan ====");
-                Console.WriteLine("1. Login sebagai Admin");
-                Console.WriteLine("2. Login sebagai Karyawan");
-                Console.WriteLine("3. Keluar");
-                Console.Write("\nPilih menu: ");
+                string[] kiri = new[]
+       {
+            "______ _            ",
+            "| ___(_)           ",
+            "| |_/ /_ ___  __ _ ",
+            "| ___ \\ / __|/ _` |",
+            "| |_/ / \\__ \\ (_| |",
+            "\\____/|_|___/\\__,_|"
+        };
+                string[] kanan = new[]
+                {
+            " __   __    _    _",
+            " \\ \\ / /   | |  | |",
+            "  \\ V /   _| | _| | __",
+            "   \\ / | | | |/ / |/ /",
+            "   | | |_| |   <|   <",
+            "    \\_/\\__,_|_|\\_\\_|\\_\\"
+        };
+                Console.WriteLine(); 
+                for (int i = 0; i < kiri.Length; i++)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write(kiri[i]);
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine(kanan[i]);  
+                }
+
+                Console.ResetColor();
+                Console.OutputEncoding = Encoding.UTF8;
+                
+                Console.WriteLine("|=================================================|");
+                Console.WriteLine("|       Sistem Penjadwalan Tugas Karyawan         |");
+                Console.WriteLine("|=================================================|");
+
+                Console.WriteLine("1. 🔐 Login sebagai Admin");
+                Console.WriteLine("2. 🔒 Login sebagai Karyawan");
+                Console.WriteLine("3. ❌ Keluar");
+                Console.Write("Pilih menu: ");
 
                 string pilihanLogin = Console.ReadLine()?.Trim();
 
@@ -88,16 +121,22 @@ namespace Tubes_FauzanWahyuM
         {
             bool kembaliKeLogin = false;
             while (!kembaliKeLogin)
-            {
+             {
                 Console.Clear();
+                Console.OutputEncoding = Encoding.UTF8;
+                Console.WriteLine("|==========================|");
+                Console.WriteLine("|      📋 Menu Karyawan    |");
+                Console.WriteLine("|==========================|");
+
                 Console.WriteLine("Karyawan: " + karyawanAktif);
-                Console.WriteLine("1. Mendaftarkan tugas");
-                Console.WriteLine("2. Tugas yang sudah disimpan");
-                Console.WriteLine("3. Selesaikan tugas");
-                Console.WriteLine("4. Statistik & Laporan Karyawan");
-                Console.WriteLine("5. Logout");
-                Console.WriteLine("6. Keluar Program");
-                Console.Write("\nPilih menu: ");
+
+                Console.WriteLine("1. 📝 Mendaftarkan tugas");
+                Console.WriteLine("2. 💾 Tugas yang sudah disimpan");
+                Console.WriteLine("3. ✅ Selesaikan tugas");
+                Console.WriteLine("4. 📊 Statistik & Laporan Karyawan");
+                Console.WriteLine("5. ❌ Logout");
+                //Console.WriteLine("6. Keluar Program");
+                Console.Write("Pilih menu: ");
 
                 string pilihan = Console.ReadLine()?.Trim() ?? "";
 
@@ -145,14 +184,22 @@ namespace Tubes_FauzanWahyuM
             while (!keluar)
             {
                 Console.Clear();
-                Console.WriteLine("=== Menu Admin ===");
-                Console.WriteLine("1. Lihat semua tugas");
-                Console.WriteLine("2. Tambah tugas");
-                Console.WriteLine("3. Hapus tugas");
-                Console.WriteLine("4. Kembali ke menu login");
-                Console.Write("\nPilih menu: ");
+                Console.OutputEncoding = Encoding.UTF8;
+                Console.WriteLine("|==========================|");
+                Console.WriteLine("|       📋 Menu Admin      |");
+                Console.WriteLine("|==========================|");
+                Console.WriteLine("1. 📑 Lihat Semua Tugas ");
+                Console.WriteLine("2. ➕ Tambah Tugas ");
+                Console.WriteLine("3. 🗑️ Hapus Tugas ");
+                Console.WriteLine("4. 🔙 Kembali Ke Menu Login ");
+                //Console.WriteLine("1. Lihat semua tugas");
+                //Console.WriteLine("2. Tambah tugas");
+                //Console.WriteLine("3. Hapus tugas");
+                //Console.WriteLine("4. Kembali ke menu login");
+                Console.Write("Pilih menu: ");
 
                 string pilihan = Console.ReadLine()?.Trim();
+
 
                 switch (pilihan)
                 {
