@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tubes_Kelompok_BisaYukk.Modules
 {
-    internal class UserSession
+    public class UserSession
     {
         private static string karyawanAktif;
 

@@ -96,7 +96,6 @@ namespace Tubes_FauzanWahyuM
                 Console.WriteLine("3. Selesaikan tugas");
                 Console.WriteLine("4. Statistik & Laporan Karyawan");
                 Console.WriteLine("5. Logout");
-                Console.WriteLine("6. Keluar Program");
                 Console.Write("\nPilih menu: ");
 
                 string pilihan = Console.ReadLine()?.Trim() ?? "";
@@ -126,11 +125,6 @@ namespace Tubes_FauzanWahyuM
                         Console.WriteLine("Logout...");
                         kembaliKeLogin = true;
                         break;
-                    case "6":
-                        Console.WriteLine("Keluar dari program...");
-                        FileHandler.SimpanKeFile(dataKaryawan);
-                        Environment.Exit(0);
-                        break;
                     default:
                         Console.WriteLine("Pilihan tidak valid! Tekan sembarang tombol untuk kembali.");
                         Console.ReadKey();
@@ -149,7 +143,8 @@ namespace Tubes_FauzanWahyuM
                 Console.WriteLine("1. Lihat semua tugas");
                 Console.WriteLine("2. Tambah tugas");
                 Console.WriteLine("3. Hapus tugas");
-                Console.WriteLine("4. Kembali ke menu login");
+                Console.WriteLine("4. Lihat history tugas yang sudah diselesaikan");
+                Console.WriteLine("5. Kembali ke menu login");
                 Console.Write("\nPilih menu: ");
 
                 string pilihan = Console.ReadLine()?.Trim();
@@ -166,6 +161,9 @@ namespace Tubes_FauzanWahyuM
                         HapusTugas();
                         break;
                     case "4":
+                        TampilkanHistoryTugasSelesai();
+                        break;
+                    case "5":
                         keluar = true;
                         break;
                     default:
@@ -273,7 +271,7 @@ namespace Tubes_FauzanWahyuM
                     return;
             }
 
-            if (AutomataPemesanan.TambahTugas(nama))
+            if (AutomataPemesanan.TambahTugas(nama, dataKaryawan))
             {
                 AutomataStatus.TambahTugasUntukStatus(status, nama);
                 PrioritasTugas.AturPrioritas(nama, prioritas);
@@ -423,5 +421,28 @@ namespace Tubes_FauzanWahyuM
                 Console.ReadKey();
             }
         }
+
+        static void TampilkanHistoryTugasSelesai()
+        {
+            TableDrivenJadwal.NormalisasiTugasSelesai(dataKaryawan);
+            Console.WriteLine("===== History Tugas yang Sudah Selesai =====");
+
+            var semuaSelesai = TableDrivenJadwal.GetTugasSelesai(dataKaryawan);
+            if (semuaSelesai.Count == 0)
+            {
+                Console.WriteLine("Belum ada tugas yang diselesaikan.");
+                return;
+            }
+
+            foreach (var karyawan in semuaSelesai)
+            {
+                Console.WriteLine($"\nKaryawan: {karyawan.Key}");
+                foreach (var tugas in karyawan.Value)
+                {
+                    Console.WriteLine("- " + tugas);
+                }
+            }
+        }
+
     }
 }

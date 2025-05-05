@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35919.96 d17.13
+VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tubes_Kelompok_BisaYukk", "Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk.csproj", "{5171850D-1D29-4176-99D3-8570A5D96B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tubes_Kelompok_BisaYukk.Testing", "Tubes_Kelompok_BisaYukk.Testing\Tubes_Kelompok_BisaYukk.Testing.csproj", "{72F68C35-96F2-4C3C-B719-15D5B5800140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tubes_PerformanceBenchmark", "Tubes_PerformanceBenchmark\Tubes_PerformanceBenchmark.csproj", "{D797FF44-212D-41A5-BE8E-37A858C368A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5171850D-1D29-4176-99D3-8570A5D96B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5171850D-1D29-4176-99D3-8570A5D96B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5171850D-1D29-4176-99D3-8570A5D96B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F68C35-96F2-4C3C-B719-15D5B5800140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F68C35-96F2-4C3C-B719-15D5B5800140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F68C35-96F2-4C3C-B719-15D5B5800140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F68C35-96F2-4C3C-B719-15D5B5800140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D797FF44-212D-41A5-BE8E-37A858C368A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D797FF44-212D-41A5-BE8E-37A858C368A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D797FF44-212D-41A5-BE8E-37A858C368A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D797FF44-212D-41A5-BE8E-37A858C368A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

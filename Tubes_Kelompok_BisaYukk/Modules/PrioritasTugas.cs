@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tubes_Kelompok_BisaYukk.Modules
 {
-    internal class PrioritasTugas
+    public class PrioritasTugas
     {
         // Tambahkan daftarPrioritas agar tidak error CS0103
         private static Dictionary<string, string> daftarPrioritas = new Dictionary<string, string>
