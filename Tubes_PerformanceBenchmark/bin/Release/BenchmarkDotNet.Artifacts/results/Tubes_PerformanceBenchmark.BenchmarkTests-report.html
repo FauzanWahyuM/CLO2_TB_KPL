@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Tubes_PerformanceBenchmark.BenchmarkTests-20250504-171507</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.26100.3775)
+12th Gen Intel Core i5-12450HX, 1 CPU, 12 logical and 8 physical cores
+  [Host]     : .NET Framework 4.8.1 (4.8.9300.0), X86 LegacyJIT [AttachedDebugger]
+  Job-FTOBUC : .NET Framework 4.8.1 (4.8.9300.0), X86 LegacyJIT
+</code></pre>
+<pre><code>InvocationCount=1  UnrollFactor=1  
+</code></pre>
+
+<table>
+<thead><tr><th>Method          </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>TambahTugas</td><td>2,741.7 ns</td><td>437.36 ns</td><td>1,261.9 ns</td><td>2,200.0 ns</td><td>-</td>
+</tr><tr><td>AmbilTugas</td><td>1,415.3 ns</td><td>280.25 ns</td><td>817.5 ns</td><td>1,200.0 ns</td><td>-</td>
+</tr><tr><td>CekTugasTersedia</td><td>438.5 ns</td><td>95.73 ns</td><td>276.2 ns</td><td>300.0 ns</td><td>-</td>
+</tr><tr><td>HapusTugas</td><td>1,021.9 ns</td><td>176.67 ns</td><td>509.7 ns</td><td>900.0 ns</td><td>-</td>
+</tr><tr><td>GetSemuaTugas</td><td>1,225.0 ns</td><td>244.92 ns</td><td>706.7 ns</td><td>1,000.0 ns</td><td>-</td>
+</tr><tr><td>TambahTugasUntukStatus</td><td>3,217.9 ns</td><td>386.67 ns</td><td>1,109.4 ns</td><td>2,900.0 ns</td><td>-</td>
+</tr><tr><td>HapusTugasDariStatus</td><td>703.1 ns</td><td>171.01 ns</td><td>496.1 ns</td><td>500.0 ns</td><td>-</td>
+</tr><tr><td>GetTugasDariStatus</td><td>845.7 ns</td><td>192.30 ns</td><td>548.6 ns</td><td>600.0 ns</td><td>-</td>
+</tr><tr><td>GetStatusDariTugas</td><td>5,081.3 ns</td><td>700.50 ns</td><td>2,021.1 ns</td><td>4,700.0 ns</td><td>-</td>
+</tr><tr><td>SimpanJadwal</td><td>2,173.2 ns</td><td>416.24 ns</td><td>1,194.3 ns</td><td>1,750.0 ns</td><td>-</td>
+</tr><tr><td>GetTugasKaryawan</td><td>2,220.2 ns</td><td>260.13 ns</td><td>720.8 ns</td><td>2,000.0 ns</td><td>-</td>
+</tr><tr><td>SelesaikanTugas</td><td>3,950.0 ns</td><td>500.48 ns</td><td>1,459.9 ns</td><td>3,700.0 ns</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>

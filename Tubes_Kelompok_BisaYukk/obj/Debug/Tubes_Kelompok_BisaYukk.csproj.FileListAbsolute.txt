@@ -1,3 +1,7 @@
+D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\xunit.abstractions.dll
+D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\xunit.runner.reporters.net452.dll
+D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\xunit.runner.utility.net452.dll
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\Tubes_Kelompok_BisaYukk.exe.config
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\Tubes_Kelompok_BisaYukk.exe
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\Tubes_Kelompok_BisaYukk.pdb
@@ -11,6 +15,9 @@ D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Prakti
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\System.Text.Json.dll
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\System.Threading.Tasks.Extensions.dll
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\System.ValueTuple.dll
+D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\xunit.assert.dll
+D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\xunit.core.dll
+D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\xunit.execution.desktop.dll
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\System.Buffers.xml
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\System.IO.Pipelines.xml
@@ -21,6 +28,9 @@ D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Prakti
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\System.Text.Json.xml
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\System.ValueTuple.xml
+D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\xunit.assert.xml
+D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\xunit.core.xml
+D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\bin\Debug\xunit.execution.desktop.xml
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\obj\Debug\Tubes_Kelompok_BisaYukk.csproj.AssemblyReference.cache
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\obj\Debug\Tubes_Kelompok_BisaYukk.csproj.CoreCompileInputs.cache
 D:\ITTP\Semester 6\PRAKTIKUM KONSTRUKSI PERANGKAT LUNAK SE-06-01 [YIS]\VS Praktikum\Tubes_Kelompok_BisaYukk\Tubes_Kelompok_BisaYukk\obj\Debug\Tubes_Ke.57A530DD.Up2Date

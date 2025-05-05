@@ -73,10 +73,61 @@ namespace Tubes_Kelompok_BisaYukk.Modules
             {
                 for (int i = 0; i < data[karyawan].Count; i++)
                 {
-                    if (data[karyawan][i].Equals(tugas) && !data[karyawan][i].Contains("(Selesai)"))
+                    if (data[karyawan][i].Contains(tugas))
                     {
-                        data[karyawan][i] += " (Selesai)";
+                        // Hilangkan tanda lama jika ada
+                        data[karyawan][i] = data[karyawan][i]
+                            .Replace("(Selesai)", "")
+                            .Replace("[SELESAI]", "")
+                            .Trim();
+
+                        // Tambahkan tanda selesai standar
+                        data[karyawan][i] += " [SELESAI]";
                         break;
+                    }
+                }
+            }
+        }
+
+        public static Dictionary<string, List<string>> GetTugasSelesai(Dictionary<string, List<string>> data)
+        {
+            var hasil = new Dictionary<string, List<string>>();
+
+            foreach (var karyawan in data)
+            {
+                var listSelesai = karyawan.Value
+                    .Where(tugas => tugas.Contains("[SELESAI]"))
+                    .ToList();
+
+                if (listSelesai.Count > 0)
+                {
+                    hasil[karyawan.Key] = listSelesai;
+                }
+            }
+
+            return hasil;
+        }
+
+        public static void NormalisasiTugasSelesai(Dictionary<string, List<string>> data)
+        {
+            foreach (var karyawan in data.Keys.ToList())
+            {
+                for (int i = 0; i < data[karyawan].Count; i++)
+                {
+                    string tugas = data[karyawan][i];
+
+                    // Jika mengandung "(Selesai)" tapi belum [SELESAI]
+                    if (tugas.Contains("(Selesai)"))
+                    {
+                        tugas = tugas.Replace("(Selesai)", "").Trim();
+
+                        // Hindari duplikat penanda
+                        if (!tugas.EndsWith("[SELESAI]"))
+                        {
+                            tugas += " [SELESAI]";
+                        }
+
+                        data[karyawan][i] = tugas;
                     }
                 }
             }

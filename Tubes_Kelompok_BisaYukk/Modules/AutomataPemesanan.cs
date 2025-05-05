@@ -25,15 +25,29 @@ namespace Tubes_Kelompok_BisaYukk.Modules
             return false;
         }
 
-        public static bool TambahTugas(string tugas)
+        public static bool TambahTugas(string tugas, Dictionary<string, List<string>> dataKaryawan)
         {
-            if (!string.IsNullOrEmpty(tugas) && !tugasTersedia.ContainsKey(tugas))
+            if (string.IsNullOrWhiteSpace(tugas))
+                return false;
+
+            foreach (var tugasList in dataKaryawan.Values)
+            {
+                if (tugasList.Any(t => t.Contains(tugas) && t.Contains("[SELESAI]")))
+                {
+                    Console.WriteLine("Tugas ini sudah pernah diselesaikan oleh karyawan. Tidak bisa ditambahkan kembali.");
+                    return false;
+                }
+            }
+
+            if (!tugasTersedia.ContainsKey(tugas))
             {
                 tugasTersedia[tugas] = true;
                 return true;
             }
+
             return false;
         }
+
 
         public static bool HapusTugas(string tugas)
         {
