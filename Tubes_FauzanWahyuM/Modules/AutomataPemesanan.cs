@@ -6,17 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tubes_FauzanWahyuM.Modules
 {
-    public class AutomataPemesanan
+    public static class AutomataPemesanan
     {
-        private static Dictionary<string, bool> tugasTersedia = new Dictionary<string, bool>
-        {
-            { "Entry Task 1", true },
-            { "Entry Task 2", true },
-            { "Intermediate Task 1", true },
-            { "Intermediate Task 2", true },
-            { "Advanced Task 1", true },
-            { "Advanced Task 2", true }
-        };
+        private static Dictionary<string, bool> tugasTersedia = new Dictionary<string, bool>();
 
         public static bool CekTugasTersedia(string tugas)
         {
@@ -31,6 +23,26 @@ namespace Tubes_FauzanWahyuM.Modules
                 return true;
             }
             return false;
+        }
+
+        public static bool TambahTugas(string tugas)
+        {
+            if (!string.IsNullOrEmpty(tugas) && !tugasTersedia.ContainsKey(tugas))
+            {
+                tugasTersedia[tugas] = true;
+                return true;
+            }
+            return false;
+        }
+
+        public static bool HapusTugas(string tugas)
+        {
+            return tugasTersedia.Remove(tugas);
+        }
+
+        public static Dictionary<string, bool> GetSemuaTugas()
+        {
+            return new Dictionary<string, bool>(tugasTersedia);
         }
     }
 }

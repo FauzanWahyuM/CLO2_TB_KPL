@@ -8,12 +8,35 @@ namespace Tubes_FauzanWahyuM.Modules
 {
     public static class StatistikKaryawan
     {
-        public static void TampilkanLaporan(Dictionary<string, List<string>> data)
+        public static void TampilkanLaporan(Dictionary<string, List<string>> dataKaryawan)
         {
-            Console.WriteLine("\nLaporan Kinerja Karyawan:");
-            foreach (var karyawan in data.Keys)
+            Console.WriteLine("=== Statistik dan Laporan Kinerja Karyawan ===\n");
+
+            foreach (var karyawan in dataKaryawan)
             {
-                Console.WriteLine($"{karyawan} - Tugas selesai: {data[karyawan].Count}");
+                string nama = karyawan.Key;
+                List<string> daftarTugas = karyawan.Value;
+
+                int total = daftarTugas.Count;
+                int selesai = 0;
+                int dalamProses = 0;
+
+                foreach (var tugas in daftarTugas)
+                {
+                    if (tugas.Contains("(Selesai)"))
+                    {
+                        selesai++;
+                    }
+                    else
+                    {
+                        dalamProses++;
+                    }
+                }
+
+                Console.WriteLine($"Karyawan: {nama}");
+                Console.WriteLine($"- Total Tugas       : {total}");
+                Console.WriteLine($"- Tugas Selesai     : {selesai}");
+                Console.WriteLine($"- Masih Dalam Proses: {dalamProses}\n");
             }
         }
     }

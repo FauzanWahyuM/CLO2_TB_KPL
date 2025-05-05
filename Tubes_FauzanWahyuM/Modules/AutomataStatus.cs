@@ -7,13 +7,39 @@ using Tubes_FauzanWahyuM.Models;
 
 namespace Tubes_FauzanWahyuM.Modules
 {
-    public class AutomataStatus
+    public static class AutomataStatus
     {
+        private static Dictionary<StatusKaryawan, List<string>> tugasPerStatus = new Dictionary<StatusKaryawan, List<string>>
+        {
+            { StatusKaryawan.Junior, new List<string>() },
+            { StatusKaryawan.Middle, new List<string>() },
+            { StatusKaryawan.Senior, new List<string>() }
+        };
+
         public static List<string> GetTugas(StatusKaryawan status)
         {
-            return status == StatusKaryawan.Junior ? new List<string> { "Entry Task 1", "Entry Task 2" } :
-                   status == StatusKaryawan.Middle ? new List<string> { "Intermediate Task 1", "Intermediate Task 2" } :
-                   new List<string> { "Advanced Task 1", "Advanced Task 2" };
+            return tugasPerStatus.ContainsKey(status) ? new List<string>(tugasPerStatus[status]) : new List<string>();
+        }
+
+        public static void TambahTugasUntukStatus(StatusKaryawan status, string tugas)
+        {
+            if (!tugasPerStatus.ContainsKey(status))
+            {
+                tugasPerStatus[status] = new List<string>();
+            }
+
+            if (!tugasPerStatus[status].Contains(tugas))
+            {
+                tugasPerStatus[status].Add(tugas);
+            }
+        }
+
+        public static void HapusTugasDariStatus(StatusKaryawan status, string tugas)
+        {
+            if (tugasPerStatus.ContainsKey(status))
+            {
+                tugasPerStatus[status].Remove(tugas);
+            }
         }
     }
 }
